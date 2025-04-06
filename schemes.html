@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Schemes - Farmer Support Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-leaf"></i>
+                <h1>Farmer Support Portal</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="schemes.html" class="active">Government Schemes</a></li>
+                    <li><a href="profiles.html">Profiles</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Government Agricultural Schemes</h1>
+            <p>Explore various government initiatives designed to support farmers</p>
+        </div>
+    </section>
+
+    <section class="schemes-section">
+        <div class="container">
+            <div class="schemes-filter">
+                <div class="search-box">
+                    <input type="text" id="scheme-search" placeholder="Search schemes...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-category="all">All Schemes</button>
+                    <button class="filter-tab" data-category="financial">Financial Support</button>
+                    <button class="filter-tab" data-category="insurance">Insurance</button>
+                    <button class="filter-tab" data-category="technology">Technology</button>
+                </div>
+            </div>
+
+            <div class="schemes-grid" id="schemes-container">
+                <!-- Financial Support Schemes -->
+                <div class="scheme-card" data-category="financial">
+                    <div class="scheme-header">
+                        <h3>Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)</h3>
+                        <span class="scheme-badge financial">Financial</span>
+                    </div>
+                    <div class="scheme-body">
+                        <p class="scheme-description">Direct income support to farmers' families.</p>
+                        <div class="scheme-details">
+                            <div class="detail-item">
+                                <h4>Eligibility</h4>
+                                <p>Small and marginal farmers with cultivable landholding</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4>Benefits</h4>
+                                <p>₹6,000 per year in three equal installments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scheme-footer">
+                        <a href="https://pmkisan.gov.in/" target="_blank" class="btn btn-primary">Apply Now</a>
+                        <button class="btn btn-secondary scheme-details-btn">More Details</button>
+                    </div>
+                </div>
+
+                <div class="scheme-card" data-category="financial">
+                    <div class="scheme-header">
+                        <h3>Kisan Credit Card</h3>
+                        <span class="scheme-badge financial">Financial</span>
+                    </div>
+                    <div class="scheme-body">
+                        <p class="scheme-description">Provides farmers with affordable credit for their agricultural needs.</p>
+                        <div class="scheme-details">
+                            <div class="detail-item">
+                                <h4>Eligibility</h4>
+                                <p>All farmers, sharecroppers, and tenant farmers</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4>Benefits</h4>
+                                <p>Interest subvention of 2% for loans up to ₹3 lakhs, additional 3% for timely repayment</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scheme-footer">
+                        <a href="#" class="btn btn-primary">Apply Now</a>
+                        <button class="btn btn-secondary scheme-details-btn">More Details</button>
+                    </div>
+                </div>
+
+                <!-- Insurance Schemes -->
+                <div class="scheme-card" data-category="insurance">
+                    <div class="scheme-header">
+                        <h3>Pradhan Mantri Fasal Bima Yojana</h3>
+                        <span class="scheme-badge insurance">Insurance</span>
+                    </div>
+                    <div class="scheme-body">
+                        <p class="scheme-description">Crop insurance scheme to protect farmers from crop failure.</p>
+                        <div class="scheme-details">
+                            <div class="detail-item">
+                                <h4>Eligibility</h4>
+                                <p>All farmers growing notified crops</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4>Benefits</h4>
+                                <p>Insurance coverage and financial support in case of crop failure due to natural calamities</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scheme-footer">
+                        <a href="https://pmfby.gov.in/" target="_blank" class="btn btn-primary">Apply Now</a>
+                        <button class="btn btn-secondary scheme-details-btn">More Details</button>
+                    </div>
+                </div>
+
+                <div class="scheme-card" data-category="insurance">
+                    <div class="scheme-header">
+                        <h3>Weather Based Crop Insurance Scheme</h3>
+                        <span class="scheme-badge insurance">Insurance</span>
+                    </div>
+                    <div class="scheme-body">
+                        <p class="scheme-description">Insurance against adverse weather conditions.</p>
+                        <div class="scheme-details">
+                            <div class="detail-item">
+                                <h4>Eligibility</h4>
+                                <p>Farmers in notified areas growing notified crops</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4>Benefits</h4>
+                                <p>Compensation for financial losses due to adverse weather conditions</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scheme-footer">
+                        <a href="#" class="btn btn-primary">Apply Now</a>
+                        <button class="btn btn-secondary scheme-details-btn">More Details</button>
+                    </div>
+                </div>
+
+                <!-- Technology Schemes -->
+                <div class="scheme-card" data-category="technology">
+                    <div class="scheme-header">
+                        <h3>Sub-Mission on Agricultural Mechanization</h3>
+                        <span class="scheme-badge technology">Technology</span>
+                    </div>
+                    <div class="scheme-body">
+                        <p class="scheme-description">Promotes farm mechanization among small and marginal farmers.</p>
+                        <div class="scheme-details">
+                            <div class="detail-item">
+                                <h4>Eligibility</h4>
+                                <p>Individual farmers, custom hiring centers, farm machinery banks</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4>Benefits</h4>
+                                <p>Financial assistance for purchasing agricultural machinery and equipment</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scheme-footer">
+                        <a href="#" class="btn btn-primary">Apply Now</a>
+                        <button class="btn btn-secondary scheme-details-btn">More Details</button>
+                    </div>
+                </div>
+
+                <div class="scheme-card" data-category="technology">
+                    <div class="scheme-header">
+                        <h3>National Mission for Sustainable Agriculture</h3>
+                        <span class="scheme-badge technology">Technology</span>
+                    </div>
+                    <div class="scheme-body">
+                        <p class="scheme-description">Promotes sustainable agriculture practices.</p>
+                        <div class="scheme-details">
+                            <div class="detail-item">
+                                <h4>Eligibility</h4>
+                                <p>All farmers</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4>Benefits</h4>
+                                <p>Support for adopting climate-resilient technologies and practices</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scheme-footer">
+                        <a href="#" class="btn btn-primary">Apply Now</a>
+                        <button class="btn btn-secondary scheme-details-btn">More Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="application-guide">
+        <div class="container">
+            <div class="section-header">
+                <h2>How to Apply for Schemes</h2>
+                <p>Follow these steps to apply for government agricultural schemes</p>
+            </div>
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Check Eligibility</h3>
+                        <p>Review the eligibility criteria for the scheme you're interested in.</p>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Prepare Documents</h3>
+                        <p>Gather all required documents such as land records, identity proof, and bank details.</p>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Submit Application</h3>
+                        <p>Apply online through the official portal or visit your local agriculture office for assistance.</p>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Track Application</h3>
+                        <p>Monitor your application status through the portal or by contacting the agriculture office.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-leaf"></i>
+                        <h2>Farmer Support Portal</h2>
+                    </div>
+                    <p>Empowering farmers with technology, information, and community support.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="schemes.html">Government Schemes</a></li>
+                        <li><a href="profiles.html">Profiles</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-envelope"></i> support@farmersportal.com</p>
+                    <p><i class="fas fa-phone"></i> +91 1234567890</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Farmer Support Portal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="schemes.js"></script>
+</body>
+</html>
