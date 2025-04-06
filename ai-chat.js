@@ -3,7 +3,7 @@
 
 import { InferenceClient } from "https://cdn.skypack.dev/@huggingface/inference";
 
-const client = new InferenceClient("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");
+const client = new InferenceClient("");
 
 async function uploadImage() {
     const fileInput = document.getElementById("fileInput");
@@ -81,7 +81,7 @@ document.getElementById("uploadButton").addEventListener("click", uploadImage);
 
 //chatbot 
 
-const API_KEY = "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";
+const API_KEY = "";
 const API_URL = "https://api.groq.com/openai/v1/chat/completions";
 
 const chatDisplay = document.getElementById("chat-display");
